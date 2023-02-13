@@ -1,0 +1,16 @@
+ {{!-- Pour chaque artist --}}
+{{#each albumsArray}}
+
+{{!-- créer un div contenant "l'image" --}}
+<div class="album-container">
+
+    <img src="{{images.0.url}}" alt="image-album">
+
+{{!-- puis un autre div contenant "nom, lien vers albums" --}}
+    <div class="album-info">
+        <h1>{{name}}</h1>
+        <a href="/{{id}}/tracks">show {{name}} tracks</a>
+    </div>
+</div>
+
+{{/each}}

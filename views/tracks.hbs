@@ -1,0 +1,17 @@
+ {{!-- Pour chaque artist --}}
+{{#each tracksArray}}
+
+{{!-- créer un div contenant "l'image" --}}
+<div class="tracks-container">
+
+
+
+{{!-- puis un autre div contenant "nom, lien vers albums" --}}
+    <div class="tracks-info">
+        <h1>{{name}}</h1>
+        <audio controls src="{{preview_url}}"></audio>
+
+    </div>
+</div>
+
+{{/each}}
